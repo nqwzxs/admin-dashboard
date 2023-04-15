@@ -61,19 +61,19 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
     padding: 16px 64px;
     gap: 16px;
     font-weight: 500;
     z-index: 2;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .search-bar {
     display: grid;
     grid-template-columns: 32px 1fr;
-    gap: 8px;
+    gap: 32px;
 }
 
 .search-bar input {
@@ -140,7 +140,7 @@ body {
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 32px 24px;
     gap: 16px;
     background-color: #e2e8f0;
@@ -159,6 +159,7 @@ body {
     gap: 32px;
     border-left: 8px solid orange;
     color: #71717a;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .main-content .card img {
@@ -170,9 +171,10 @@ body {
 .main-content .card .content h1 {
     font-size: 1.2rem;
     color: black;
+    margin-bottom: 4px;
 }
 
-.main-content .container {
+.main-content .projects .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
     gap: 16px;
@@ -182,4 +184,27 @@ body {
     margin-bottom: 16px;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.main-content .announcements .container {
+    background-color: white;
+    padding: 32px;
+    display: grid;
+    border-radius: 16px;
+    gap: 32px;
+    color: #71717a;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-content .announcements h1 {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.main-content .announcements .divider {
+    height: 1px;
+    width: 100%;
+    background-color: #71717a;
 }
