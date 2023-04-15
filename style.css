@@ -141,7 +141,7 @@ body {
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 32px 24px;
+    padding: 16px;
     gap: 16px;
     background-color: #e2e8f0;
 }
@@ -154,8 +154,7 @@ body {
     background-color: white;
     padding: 32px;
     display: grid;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-radius: 16px;
     gap: 32px;
     border-left: 8px solid orange;
     color: #71717a;
@@ -181,12 +180,13 @@ body {
 }
 
 .main-content > div > div:first-child {
-    margin-bottom: 16px;
-    font-size: 1.2rem;
+    margin: 16px 0 16px;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
-.main-content .announcements .container {
+.main-content .announcements .container,
+.main-content .trending .container {
     background-color: white;
     padding: 32px;
     display: grid;
@@ -207,4 +207,23 @@ body {
     height: 1px;
     width: 100%;
     background-color: #71717a;
+}
+
+.main-content .trending img {
+    height: 64px;
+    border-radius: 32px;
+}
+
+.main-content .trending .nickname {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.main-content .trending .profile {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 32px;
+    cursor: pointer;
 }
